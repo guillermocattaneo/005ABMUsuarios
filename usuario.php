@@ -12,15 +12,14 @@ class Usuario
 	function __construct($nombre,$correo,$edad,$clave,$foto)
 	{
 		$this->nombre=$nombre;
-		$this->correo=$correo;//CONSTRUCTOR
+		$this->correo=$correo;
 		$this->edad=$edad;
 		$this->clave=$clave;
 		$this->foto=$foto;
 	}
 
 	public function nombreFoto($foto)//Valida si ya hay fotos subidas con el mismo nombre, si las hay las sube con otro nombre
-	{
-		
+	{		
 		$nombreOriginal= $foto['name'];
 		$exploded_nombre= explode(".", $nombreOriginal);
 		$extension= array_pop($exploded_nombre);
@@ -29,13 +28,9 @@ class Usuario
 		$cant= count($array); //Devuelve el entero del anterior GLOB
 
 		if($cant > 0)
-		{
-			$nombreFinal=$exploded_nombre[0]."(Copia$cant).".$extension;
-
+		{			$nombreFinal=$exploded_nombre[0]."(Copia$cant).".$extension;
 		}else
-		{
-			$nombreFinal=$nombreOriginal;
-		}
+		{			$nombreFinal=$nombreOriginal;		}
 		move_uploaded_file($foto['tmp_name'], "fotos/".$nombreFinal);
 		return $nombreFinal;
 	}

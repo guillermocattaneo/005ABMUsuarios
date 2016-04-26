@@ -7,7 +7,7 @@
 
  <table border="1" style="margin:0 auto">
 <tbody>
-<form method="post">
+<form method="post" action="error.html">
 
 	<tr>	<td>correo </td><td><input type="text" name="correo"></td>	</tr>
 	<tr>	<td>clave</td><td><input type="password" name="clave"></td>	</tr>
@@ -30,7 +30,10 @@
 
 <?php 
 
-
+/*
+public correo$_POST['correo'];
+public clave=$_POST['clave'];
+*/
 
 
 ?>

@@ -1,14 +1,10 @@
 <?php 
-
       include("archivos/tablaUsuarios.php");
-
-      
-
 ?>
 
 <html>
 <head>
-	<title></title>
+	<title>Actualizar en Carga primero</title>
 </head>
 <body>
 

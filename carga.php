@@ -35,9 +35,9 @@ Usuario::CrearTablaUsuarios();
 
 <?php 
 	//para validar si funciona, si no lo borre, fue un error
-      include("archivos/tablaUsuarios.php");
-
-     ?>
+    //  include("archivos/tablaUsuarios.php");
+	//
+    ?>
 
 </body>
 </html>

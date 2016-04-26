@@ -1,0 +1,8 @@
+2- Ingreso.php: 
+Pedir correo y clave, 
+	si coincide con algún dato de los cargados en el archivo usuario.txt, 
+		ir a Listado.php,
+		 sino mostrar el error.
+
+
+8- Se debe validar los datos del formulario del punto 1 y debe tener estilos aplicados. 

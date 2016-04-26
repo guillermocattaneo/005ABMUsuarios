@@ -14,9 +14,9 @@ Usuario::CrearTablaUsuarios();
 <tbody>
 <form method="post" action="gestion.php"enctype="multipart/form-data">
 	<tr>	<td>Nombre</td><td><input type="text" name="nombre"></td>	</tr>
-	<tr>	<td>Correo </td><td><input type="text" name="correo"></td>	</tr>
-	<tr>	<td>Edad</td><td><input type="text" name="edad"></td>	</tr>
-	<tr>	<td>Clave</td><td><input type="password" name="clave"></td>	</tr>
+	<tr>	<td>Correo </td><td><input type="text" value="@algo.com" name="correo"></td>	</tr>
+	<tr>	<td>Edad</td><td><input type="text" value="66" name="edad"></td>	</tr>
+	<tr>	<td>Clave</td><td><input type="password" value="1234" name="clave"></td>	</tr>
 	<tr>	<td>Imagen</td> <td><input type="file" name="foto" title="foto"></td>	</tr>
 	
 

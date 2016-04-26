@@ -1,4 +1,5 @@
 <?php 
+	include"usuario.php";
       include("archivos/tablaUsuarios.php");
 ?>
 
